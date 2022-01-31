@@ -11,7 +11,6 @@ import java.net.http.HttpResponse;
 import java.util.Scanner;
 
 public class RandomUser {
-    //TODO: Add Filters
     public String ID;
     public String Title;
     public String Gender;

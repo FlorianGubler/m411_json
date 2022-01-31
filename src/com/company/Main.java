@@ -13,7 +13,7 @@ public class Main {
             System.out.println("1 - Get New Random User");
             System.out.println("2 - Load Random User from Local");
             System.out.println("3 - Exit");
-            System.out.print("INP - $ ");
+            System.out.print("$ ");
             String inp = sc.nextLine();
             switch (inp.toLowerCase(Locale.ROOT)){
                 case "1": loadNewUser(); break;
