@@ -62,11 +62,18 @@ public class RandomUser {
     }
 
     public static RandomUser getNewUser(){
-        System.out.println("Laoading Data...\n");
+        System.out.print("Type optional Filters here (Format: key=value&otherkey=othervalue): ");
+        String requestBody = new Scanner(System.in).nextLine();
+        System.out.println("Loading Data...\n");
+
+        String targeturl = url;
+        if(requestBody != ""){
+            targeturl = targeturl + "?" + requestBody;
+        }
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
+                .uri(URI.create(targeturl))
                 .GET()
                 .build();
 
