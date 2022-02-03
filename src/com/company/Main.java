@@ -31,7 +31,7 @@ public class Main {
             Scanner sc = new Scanner(System.in);
             boolean checkanswer = true;
             while(checkanswer){
-                System.out.print("\nStore Customer Object in File? (y/n) ");
+                System.out.print("\nStore Customer Object in File? (y/n): ");
                 String answer = sc.nextLine();
                 switch (answer.toLowerCase(Locale.ROOT)){
                     case "y":

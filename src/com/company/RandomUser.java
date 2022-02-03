@@ -124,7 +124,6 @@ public class RandomUser {
         try{
             return objectMapper.readValue(new File(Filepath), RandomUser.class);
         }catch (Exception e){
-            e.printStackTrace();
             System.out.println("Userdata cant be loaded From File '" + Filepath + "'");
             return null;
         }
